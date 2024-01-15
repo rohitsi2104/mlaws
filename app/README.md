@@ -5,6 +5,7 @@ This project is an application that processes CSV data, generates a machine lear
 ## Installation
 
 1. Clone the repository:
+https://github.com/rohitsi2104/mlaws
 
 
 2. Install dependencies:
