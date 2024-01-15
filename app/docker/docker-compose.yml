@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      LOCAL_CSV_FILE: ./melb_data.csv
+      TARGET_COLUMN: Price
