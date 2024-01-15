@@ -36,8 +36,8 @@ def create_project_rout():
     data = request.get_json()
 
     tenant_name = data.get('tenant_name', 'Default Tenant')
-    local_csv_location = data.get('local_csv_location', '/path/to/local/csv')
-    s3_model_location = data.get('s3_model_location', 's3://bucket/model')
+    local_csv_location = data.get('local_csv_location', './app/melb_data.csv')
+    s3_model_location = data.get('s3_model_location', 's3://bucket/selectedmodel')
     model_evaluation_results = data.get('model_evaluation_results', 'Evaluation: 90% accuracy')
 
     tenant = Tenant(name=tenant_name)
