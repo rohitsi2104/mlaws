@@ -55,7 +55,6 @@ def create_project_rout():
 
 
 
-# Close the MongoClient connection when the application exits
 @app.teardown_appcontext
 def close_mongo_connection(exception):
     client.close()
